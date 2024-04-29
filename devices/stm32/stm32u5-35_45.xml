@@ -509,21 +509,21 @@
         <signal af="14" driver="tim" instance="17" name="bkin"/>
       </gpio>
       <gpio port="a" pin="11">
+        <signal name="usb_dm"/>
         <signal af="1" driver="tim" instance="1" name="ch4"/>
         <signal af="2" driver="tim" instance="1" name="bkin2"/>
         <signal af="5" driver="spi" instance="1" name="miso"/>
         <signal af="7" driver="usart" instance="1" name="cts"/>
         <signal af="9" driver="fdcan" instance="1" name="rx"/>
-        <signal af="10" name="usb_dm"/>
       </gpio>
       <gpio port="a" pin="12">
+        <signal name="usb_dp"/>
         <signal af="1" driver="tim" instance="1" name="etr"/>
         <signal af="5" driver="spi" instance="1" name="mosi"/>
         <signal af="6" driver="octospi" instance="1" name="ncs"/>
         <signal af="7" driver="usart" instance="1" name="de"/>
         <signal af="7" driver="usart" instance="1" name="rts"/>
         <signal af="9" driver="fdcan" instance="1" name="tx"/>
-        <signal af="10" name="usb_dp"/>
       </gpio>
       <gpio port="a" pin="13">
         <signal af="0" driver="debug" name="jtms"/>
@@ -2368,7 +2368,7 @@
         <pin position="48" name="VDD" type="power"/>
       </package>
       <package device-pin="n" name="WLCSP56">
-        <pin position="A1" name="VDDUSB" type="power"/>
+        <pin position="A1" name="VDD" type="power"/>
         <pin position="A3" name="PA15 (JTDI)"/>
         <pin position="A5" name="PA14 (JTCK/SWCLK)"/>
         <pin position="A7" name="PB5"/>

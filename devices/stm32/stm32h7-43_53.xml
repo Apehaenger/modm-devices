@@ -264,7 +264,8 @@
       <instance value="1"/>
     </driver>
     <driver name="dcmi" type="stm32"/>
-    <driver name="debug" type="stm32-v1.0"/>
+    <driver device-package="k" name="debug" type="stm32-v1.0"/>
+    <driver device-package="h|i|t" name="debug" type="stm32-v1.1"/>
     <driver name="dfsdm" type="stm32-v1.0">
       <instance value="1"/>
     </driver>
@@ -912,6 +913,7 @@
         <signal af="5" driver="i2s" instance="2" name="ck"/>
         <signal af="5" driver="spi" instance="2" name="sck"/>
         <signal af="7" driver="usart" instance="1" name="tx"/>
+        <signal device-package="h|i|t" af="11" driver="eth" name="tx_er"/>
         <signal af="13" driver="dcmi" name="d0"/>
         <signal af="14" driver="ltdc" name="r5"/>
       </gpio>
@@ -1019,6 +1021,7 @@
         <signal af="8" driver="sai" instance="4" name="sd_a"/>
         <signal af="9" driver="quadspi" name="clk"/>
         <signal af="10" driver="sai" instance="4" name="d1"/>
+        <signal device-package="h|i|t" af="11" driver="eth" name="tx_er"/>
       </gpio>
       <gpio port="b" pin="3">
         <signal af="0" driver="debug" name="jtdo"/>
@@ -2136,6 +2139,7 @@
         <signal af="10" driver="usb_otg_hs" name="ulpi_dir"/>
       </gpio>
       <gpio device-pin="a|b|x" port="i" pin="12">
+        <signal af="11" driver="eth" name="tx_er"/>
         <signal af="14" driver="ltdc" name="hsync"/>
       </gpio>
       <gpio device-pin="a|b|x" port="i" pin="13">

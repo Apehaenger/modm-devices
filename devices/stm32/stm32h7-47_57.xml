@@ -276,7 +276,7 @@
       <instance value="1"/>
     </driver>
     <driver name="dcmi" type="stm32"/>
-    <driver name="debug" type="stm32-v1.0"/>
+    <driver name="debug" type="stm32-v1.1"/>
     <driver name="dfsdm" type="stm32-v1.0">
       <instance value="1"/>
     </driver>
@@ -934,6 +934,7 @@
         <signal af="5" driver="i2s" instance="2" name="ck"/>
         <signal af="5" driver="spi" instance="2" name="sck"/>
         <signal af="7" driver="usart" instance="1" name="tx"/>
+        <signal af="11" driver="eth" name="tx_er"/>
         <signal af="13" driver="dcmi" name="d0"/>
         <signal af="14" driver="ltdc" name="r5"/>
       </gpio>
@@ -1042,6 +1043,7 @@
         <signal af="8" driver="sai" instance="4" name="sd_a"/>
         <signal af="9" driver="quadspi" name="clk"/>
         <signal af="10" driver="sai" instance="4" name="d1"/>
+        <signal af="11" driver="eth" name="tx_er"/>
       </gpio>
       <gpio port="b" pin="3">
         <signal af="0" driver="debug" name="jtdo"/>
@@ -2160,6 +2162,7 @@
         <signal af="10" driver="usb_otg_hs" name="ulpi_dir"/>
       </gpio>
       <gpio device-pin="x" port="i" pin="12">
+        <signal af="11" driver="eth" name="tx_er"/>
         <signal af="14" driver="ltdc" name="hsync"/>
       </gpio>
       <gpio device-pin="x" port="i" pin="13">
@@ -3033,7 +3036,7 @@
         <pin position="H8" name="PE13"/>
         <pin position="H9" name="PD14"/>
         <pin position="H10" name="PD15"/>
-        <pin position="H11" name="VSS" type="power"/>
+        <pin position="H11" name="VSSDSI" type="power"/>
         <pin position="H12" name="DSI_D1P" type="monoio"/>
         <pin position="H13" name="DSI_D1N" type="monoio"/>
         <pin position="J1" name="PH1-OSC_OUT (PH1)"/>
@@ -3046,7 +3049,7 @@
         <pin position="J8" name="PE12"/>
         <pin position="J9" name="PD13"/>
         <pin position="J10" name="PD12"/>
-        <pin position="J11" name="VSS" type="power"/>
+        <pin position="J11" name="VSSDSI" type="power"/>
         <pin position="J12" name="DSI_CKP" type="monoio"/>
         <pin position="J13" name="DSI_CKN" type="monoio"/>
         <pin position="K1" name="PC2_C"/>
@@ -3059,7 +3062,7 @@
         <pin position="K8" name="PE15"/>
         <pin position="K9" name="PB10"/>
         <pin position="K10" name="PD11"/>
-        <pin position="K11" name="VSS" type="power"/>
+        <pin position="K11" name="VSSDSI" type="power"/>
         <pin position="K12" name="DSI_D0P" type="monoio"/>
         <pin position="K13" name="DSI_D0N" type="monoio"/>
         <pin position="L1" name="VREF-" type="power"/>

@@ -993,7 +993,7 @@
         <pin position="61" name="PD10"/>
         <pin position="62" name="PD11"/>
         <pin position="63" name="VSS" type="power"/>
-        <pin position="64" name="VDDIO2" type="power"/>
+        <pin position="64" name="VDD" type="power"/>
         <pin position="65" name="PD12"/>
         <pin position="66" name="PD13"/>
         <pin position="67" name="PD14"/>

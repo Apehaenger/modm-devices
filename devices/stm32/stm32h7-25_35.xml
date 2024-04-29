@@ -289,7 +289,7 @@
       <instance value="1"/>
     </driver>
     <driver name="dcmi" type="stm32"/>
-    <driver name="debug" type="stm32-v1.0"/>
+    <driver name="debug" type="stm32-v1.1"/>
     <driver name="dfsdm" type="stm32-v1.0">
       <instance value="1"/>
     </driver>
@@ -2577,7 +2577,6 @@
       </gpio>
       <gpio device-package="k" port="h" pin="5">
         <signal driver="adc" instance="3" name="inn15"/>
-        <signal driver="adc" instance="3" name="inp16"/>
         <signal af="4" driver="i2c" instance="2" name="sda"/>
         <signal af="5" driver="spi" instance="5" name="nss"/>
         <signal af="12" driver="fmc" name="sdnwe"/>

@@ -43,8 +43,8 @@
     <driver name="core" type="cortex-m33f">
       <memory device-size="g" name="flash" access="rx" start="0x8000000" size="1048576"/>
       <memory device-size="i" name="flash" access="rx" start="0x8000000" size="2097152"/>
-      <memory name="sram1" access="rwx" start="0x20000000" size="311296"/>
-      <memory name="sram2" access="rwx" start="0x2004C000" size="16384"/>
+      <memory name="sram1" access="rwx" start="0x20000000" size="262144"/>
+      <memory name="sram2" access="rwx" start="0x20040000" size="65536"/>
       <memory name="sram3" access="rwx" start="0x20050000" size="327680"/>
       <memory name="backup" access="rwx" start="0x40036400" size="4096"/>
       <vector position="0" name="WWDG"/>
@@ -165,7 +165,7 @@
       <vector device-name="73" position="115" name="OTFDEC1"/>
       <vector device-name="73" position="116" name="AES"/>
       <vector position="117" name="HASH"/>
-      <vector device-name="73" position="118" name="PKA"/>
+      <vector position="118" name="PKA"/>
       <vector position="119" name="CEC"/>
       <vector position="120" name="TIM12"/>
       <vector position="121" name="TIM13"/>
@@ -196,9 +196,7 @@
     <driver name="dcmi" type="stm32"/>
     <driver name="debug" type="stm32-v1.0"/>
     <driver name="dts" type="stm32-v1.0"/>
-    <driver device-pin="a|i" device-variant="|q" name="eth" type="stm32-v3.0"/>
-    <driver device-pin="r|v|z" device-variant="" name="eth" type="stm32-v3.0"/>
-    <driver device-pin="m" device-variant="q" name="eth" type="stm32-v3.0"/>
+    <driver name="eth" type="stm32-v3.0"/>
     <driver name="fdcan" type="stm32">
       <instance value="1"/>
       <instance value="2"/>
@@ -283,7 +281,7 @@
     <driver device-name="73" name="otfdec" type="stm32-v1.0">
       <instance value="1"/>
     </driver>
-    <driver device-name="73" name="pka" type="stm32-v1.0"/>
+    <driver name="pka" type="stm32-v1.0"/>
     <driver name="pssi" type="stm32-v3.0"/>
     <driver name="pwr" type="stm32-v1.0"/>
     <driver name="ramcfg" type="stm32-v1.0"/>
@@ -379,9 +377,7 @@
         <signal af="8" driver="uart" instance="4" name="tx"/>
         <signal device-pin="a|i|z" af="9" driver="sdmmc" instance="2" name="cmd"/>
         <signal af="10" driver="sai" instance="2" name="sd_b"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="crs"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="crs"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="crs"/>
+        <signal af="11" driver="eth" name="crs"/>
         <signal af="14" driver="tim" instance="2" name="etr"/>
       </gpio>
       <gpio port="a" pin="1">
@@ -398,12 +394,8 @@
         <signal af="8" driver="uart" instance="4" name="rx"/>
         <signal af="9" driver="octospi" instance="1" name="io3"/>
         <signal af="10" driver="sai" instance="2" name="mclk_b"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="ref_clk"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="ref_clk"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="ref_clk"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="rx_clk"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="rx_clk"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="rx_clk"/>
+        <signal af="11" driver="eth" name="ref_clk"/>
+        <signal af="11" driver="eth" name="rx_clk"/>
       </gpio>
       <gpio port="a" pin="2">
         <signal driver="adc" instance="1" name="inp14"/>
@@ -417,9 +409,7 @@
         <signal af="5" driver="lptim" instance="1" name="in2"/>
         <signal af="7" driver="usart" instance="2" name="tx"/>
         <signal af="8" driver="sai" instance="2" name="sck_b"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="mdio"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="mdio"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="mdio"/>
+        <signal af="11" driver="eth" name="mdio"/>
       </gpio>
       <gpio port="a" pin="3">
         <signal driver="adc" instance="1" name="inp15"/>
@@ -432,9 +422,7 @@
         <signal af="5" driver="spi" instance="2" name="nss"/>
         <signal af="6" driver="sai" instance="1" name="sd_b"/>
         <signal af="7" driver="usart" instance="2" name="rx"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="col"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="col"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="col"/>
+        <signal af="11" driver="eth" name="col"/>
       </gpio>
       <gpio port="a" pin="4">
         <signal driver="adc" instance="1" name="inp18"/>
@@ -462,9 +450,7 @@
         <signal af="5" driver="i2s" instance="1" name="ck"/>
         <signal af="5" driver="spi" instance="1" name="sck"/>
         <signal af="8" driver="spi" instance="6" name="sck"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="tx_en"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="tx_en"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="tx_en"/>
+        <signal af="11" driver="eth" name="tx_en"/>
         <signal af="13" driver="pssi" name="d14"/>
         <signal af="14" driver="tim" instance="2" name="etr"/>
       </gpio>
@@ -497,12 +483,8 @@
         <signal af="8" driver="spi" instance="6" name="mosi"/>
         <signal af="9" driver="tim" instance="14" name="ch1"/>
         <signal af="10" driver="octospi" instance="1" name="io2"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="rcc_crs_dv"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="rcc_crs_dv"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="rcc_crs_dv"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="rx_dv"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="rx_dv"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="rx_dv"/>
+        <signal af="11" driver="eth" name="rcc_crs_dv"/>
+        <signal af="11" driver="eth" name="rx_dv"/>
         <signal device-pin="a|i|m|v|z" af="12" driver="fmc" name="sdnwe"/>
         <signal device-pin="a|i|m|v|z" af="13" driver="fmc" name="nwe"/>
       </gpio>
@@ -527,9 +509,7 @@
         <signal af="5" driver="i2s" instance="2" name="ck"/>
         <signal af="5" driver="spi" instance="2" name="sck"/>
         <signal af="7" driver="usart" instance="1" name="tx"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="tx_er"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="tx_er"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="tx_er"/>
+        <signal af="11" driver="eth" name="tx_er"/>
         <signal device-pin="a|i|m|v|z" af="12" driver="fmc" name="nwe"/>
         <signal af="13" driver="dcmi" name="d0"/>
         <signal af="13" driver="pssi" name="d0"/>
@@ -604,9 +584,7 @@
         <signal af="6" driver="octospi" instance="1" name="io1"/>
         <signal af="7" driver="usart" instance="11" name="ck"/>
         <signal af="8" driver="uart" instance="4" name="cts"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="rxd2"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="rxd2"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="rxd2"/>
+        <signal af="11" driver="eth" name="rxd2"/>
         <signal af="14" driver="lptim" instance="3" name="ch1"/>
       </gpio>
       <gpio port="b" pin="1">
@@ -616,9 +594,7 @@
         <signal af="2" driver="tim" instance="3" name="ch4"/>
         <signal af="3" driver="tim" instance="8" name="ch3n"/>
         <signal af="6" driver="octospi" instance="1" name="io0"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="rxd3"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="rxd3"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="rxd3"/>
+        <signal af="11" driver="eth" name="rxd3"/>
         <signal af="14" driver="lptim" instance="3" name="ch2"/>
       </gpio>
       <gpio port="b" pin="2">
@@ -682,9 +658,7 @@
         <signal af="7" driver="spi" instance="3" name="mosi"/>
         <signal af="8" driver="spi" instance="6" name="mosi"/>
         <signal af="9" driver="fdcan" instance="2" name="rx"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="pps_out"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="pps_out"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="pps_out"/>
+        <signal af="11" driver="eth" name="pps_out"/>
         <signal device-pin="a|i|m|v|z" af="12" driver="fmc" name="sdcke1"/>
         <signal af="13" driver="dcmi" name="d10"/>
         <signal af="13" driver="pssi" name="d10"/>
@@ -733,9 +707,7 @@
         <signal af="8" driver="uart" instance="4" name="rx"/>
         <signal af="9" driver="fdcan" instance="1" name="rx"/>
         <signal device-pin="a|i|z" af="10" driver="sdmmc" instance="2" name="d4"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="txd3"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="txd3"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="txd3"/>
+        <signal af="11" driver="eth" name="txd3"/>
         <signal af="12" driver="sdmmc" instance="1" name="d4"/>
         <signal af="13" driver="dcmi" name="d6"/>
         <signal af="13" driver="pssi" name="d6"/>
@@ -817,9 +789,7 @@
         <signal af="5" driver="spi" instance="2" name="sck"/>
         <signal af="7" driver="usart" instance="3" name="tx"/>
         <signal af="9" driver="octospi" instance="1" name="ncs"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="rx_er"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="rx_er"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="rx_er"/>
+        <signal af="11" driver="eth" name="rx_er"/>
       </gpio>
       <gpio device-pin="v|z" device-package="t" device-variant="q" port="b" pin="11">
         <signal af="1" driver="tim" instance="2" name="ch4"/>
@@ -829,9 +799,7 @@
         <signal device-pin="a|i" device-variant="|q" af="6" driver="spi" instance="4" name="rdy"/>
         <signal device-pin="v|z" device-variant="q" af="6" driver="spi" instance="4" name="rdy"/>
         <signal af="7" driver="usart" instance="3" name="rx"/>
-        <signal device-pin="a" device-package="i" af="11" driver="eth" name="tx_en"/>
-        <signal device-pin="i" device-package="k|t" af="11" driver="eth" name="tx_en"/>
-        <signal device-pin="r" device-package="v" af="11" driver="eth" name="tx_en"/>
+        <signal af="11" driver="eth" name="tx_en"/>
         <signal device-pin="a|i" device-variant="|q" af="12" driver="fmc" name="nbl1"/>
         <signal device-pin="v|z" device-variant="q" af="12" driver="fmc" name="nbl1"/>
       </gpio>
@@ -843,9 +811,7 @@
         <signal device-pin="a|i" device-variant="|q" af="6" driver="spi" instance="4" name="rdy"/>
         <signal device-pin="v|z" device-variant="q" af="6" driver="spi" instance="4" name="rdy"/>
         <signal af="7" driver="usart" instance="3" name="rx"/>
-        <signal device-pin="a" device-package="i" af="11" driver="eth" name="tx_en"/>
-        <signal device-pin="i" device-package="k|t" af="11" driver="eth" name="tx_en"/>
-        <signal device-pin="r" device-package="v" af="11" driver="eth" name="tx_en"/>
+        <signal af="11" driver="eth" name="tx_en"/>
         <signal device-pin="a|i" device-variant="|q" af="12" driver="fmc" name="nbl1"/>
         <signal device-pin="v|z" device-variant="q" af="12" driver="fmc" name="nbl1"/>
       </gpio>
@@ -857,9 +823,7 @@
         <signal device-pin="a|i" device-variant="|q" af="6" driver="spi" instance="4" name="rdy"/>
         <signal device-pin="v|z" device-variant="q" af="6" driver="spi" instance="4" name="rdy"/>
         <signal af="7" driver="usart" instance="3" name="rx"/>
-        <signal device-pin="a" device-package="i" af="11" driver="eth" name="tx_en"/>
-        <signal device-pin="i" device-package="k|t" af="11" driver="eth" name="tx_en"/>
-        <signal device-pin="r" device-package="v" af="11" driver="eth" name="tx_en"/>
+        <signal af="11" driver="eth" name="tx_en"/>
         <signal device-pin="a|i" device-variant="|q" af="12" driver="fmc" name="nbl1"/>
         <signal device-pin="v|z" device-variant="q" af="12" driver="fmc" name="nbl1"/>
       </gpio>
@@ -871,9 +835,7 @@
         <signal device-pin="a|i" device-variant="|q" af="6" driver="spi" instance="4" name="rdy"/>
         <signal device-pin="v|z" device-variant="q" af="6" driver="spi" instance="4" name="rdy"/>
         <signal af="7" driver="usart" instance="3" name="rx"/>
-        <signal device-pin="a" device-package="i" af="11" driver="eth" name="tx_en"/>
-        <signal device-pin="i" device-package="k|t" af="11" driver="eth" name="tx_en"/>
-        <signal device-pin="r" device-package="v" af="11" driver="eth" name="tx_en"/>
+        <signal af="11" driver="eth" name="tx_en"/>
         <signal device-pin="a|i" device-variant="|q" af="12" driver="fmc" name="nbl1"/>
         <signal device-pin="v|z" device-variant="q" af="12" driver="fmc" name="nbl1"/>
       </gpio>
@@ -955,9 +917,7 @@
         <signal af="8" driver="uart" instance="4" name="cts"/>
         <signal device-pin="a|i|z" af="9" driver="sdmmc" instance="2" name="d1"/>
         <signal af="10" driver="octospi" instance="1" name="clk"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="txd1"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="txd1"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="txd1"/>
+        <signal af="11" driver="eth" name="txd1"/>
         <signal af="13" driver="dcmi" name="d2"/>
         <signal af="13" driver="pssi" name="d2"/>
         <signal af="14" driver="uart" instance="5" name="rx"/>
@@ -990,9 +950,7 @@
         <signal af="8" driver="sai" instance="2" name="sd_a"/>
         <signal device-pin="a|i|z" af="9" driver="sdmmc" instance="2" name="ck"/>
         <signal af="10" driver="octospi" instance="1" name="io4"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="mdc"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="mdc"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="mdc"/>
+        <signal af="11" driver="eth" name="mdc"/>
       </gpio>
       <gpio port="c" pin="2">
         <signal driver="adc" instance="1" name="inn11"/>
@@ -1006,9 +964,7 @@
         <signal af="5" driver="spi" instance="2" name="miso"/>
         <signal af="6" driver="octospi" instance="1" name="io5"/>
         <signal af="9" driver="octospi" instance="1" name="io2"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="txd2"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="txd2"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="txd2"/>
+        <signal af="11" driver="eth" name="txd2"/>
         <signal device-pin="a|i|m|v|z" af="12" driver="fmc" name="sdne0"/>
       </gpio>
       <gpio port="c" pin="3">
@@ -1023,9 +979,7 @@
         <signal af="5" driver="spi" instance="2" name="mosi"/>
         <signal af="6" driver="octospi" instance="1" name="io6"/>
         <signal af="9" driver="octospi" instance="1" name="io0"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="tx_clk"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="tx_clk"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="tx_clk"/>
+        <signal af="11" driver="eth" name="tx_clk"/>
         <signal device-pin="a|i|m|v|z" af="12" driver="fmc" name="sdcke0"/>
       </gpio>
       <gpio device-pin="a|i" device-variant="|q" port="c" pin="4">
@@ -1185,9 +1139,7 @@
         <signal af="7" driver="usart" instance="3" name="tx"/>
         <signal af="8" driver="uart" instance="4" name="tx"/>
         <signal af="9" driver="octospi" instance="1" name="io1"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="txd0"/>
-        <signal device-pin="r|v|z" device-variant="" af="11" driver="eth" name="txd0"/>
-        <signal device-pin="m" device-variant="q" af="11" driver="eth" name="txd0"/>
+        <signal af="11" driver="eth" name="txd0"/>
         <signal af="12" driver="sdmmc" instance="1" name="d2"/>
         <signal af="13" driver="dcmi" name="d8"/>
         <signal af="13" driver="pssi" name="d8"/>
@@ -1533,8 +1485,7 @@
         <signal af="7" driver="usart" instance="10" name="rx"/>
         <signal af="8" driver="uart" instance="8" name="tx"/>
         <signal af="9" driver="octospi" instance="1" name="io2"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="txd3"/>
-        <signal device-pin="v|z" device-variant="" af="11" driver="eth" name="txd3"/>
+        <signal af="11" driver="eth" name="txd3"/>
         <signal af="12" driver="fmc" name="a23"/>
         <signal af="13" driver="dcmi" name="d3"/>
         <signal af="13" driver="pssi" name="d3"/>
@@ -1854,8 +1805,7 @@
         <signal af="3" driver="tim" instance="8" name="etr"/>
         <signal af="5" driver="spi" instance="6" name="nss"/>
         <signal af="7" driver="usart" instance="6" name="rts"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="pps_out"/>
-        <signal device-pin="z" device-variant="" af="11" driver="eth" name="pps_out"/>
+        <signal af="11" driver="eth" name="pps_out"/>
         <signal af="12" driver="fmc" name="sdclk"/>
       </gpio>
       <gpio device-pin="a|i|z" port="g" pin="9">
@@ -1908,8 +1858,7 @@
         <signal af="6" driver="usart" instance="10" name="tx"/>
         <signal af="7" driver="usart" instance="6" name="rts"/>
         <signal af="10" driver="sdmmc" instance="2" name="d3"/>
-        <signal device-pin="a|i" device-variant="|q" af="11" driver="eth" name="txd1"/>
-        <signal device-pin="z" device-variant="" af="11" driver="eth" name="txd1"/>
+        <signal af="11" driver="eth" name="txd1"/>
         <signal af="12" driver="fmc" name="ne4"/>
         <signal af="13" driver="dcmi" name="d11"/>
         <signal af="13" driver="pssi" name="d11"/>
@@ -1924,8 +1873,7 @@
         <signal af="7" driver="usart" instance="6" name="cts"/>
         <signal af="7" driver="usart" instance="6" name="nss"/>
         <signal af="10" driver="sdmmc" instance="2" name="d6"/>
-        <signal device-pin="a|i|z" device-variant="" af="11" driver="eth" name="txd0"/>
-        <signal device-pin="i" device-variant="q" af="11" driver="eth" name="txd0"/>
+        <signal af="11" driver="eth" name="txd0"/>
         <signal af="12" driver="fmc" name="a24"/>
         <signal af="13" driver="lptim" instance="5" name="ch2"/>
       </gpio>
@@ -1938,8 +1886,7 @@
         <signal af="7" driver="usart" instance="6" name="cts"/>
         <signal af="7" driver="usart" instance="6" name="nss"/>
         <signal af="10" driver="sdmmc" instance="2" name="d6"/>
-        <signal device-pin="a|i|z" device-variant="" af="11" driver="eth" name="txd0"/>
-        <signal device-pin="i" device-variant="q" af="11" driver="eth" name="txd0"/>
+        <signal af="11" driver="eth" name="txd0"/>
         <signal af="12" driver="fmc" name="a24"/>
         <signal af="13" driver="lptim" instance="5" name="ch2"/>
       </gpio>
@@ -1952,8 +1899,7 @@
         <signal af="7" driver="usart" instance="6" name="tx"/>
         <signal af="9" driver="octospi" instance="1" name="io7"/>
         <signal af="10" driver="sdmmc" instance="2" name="d7"/>
-        <signal device-pin="a|i|z" device-variant="" af="11" driver="eth" name="txd1"/>
-        <signal device-pin="i" device-variant="q" af="11" driver="eth" name="txd1"/>
+        <signal af="11" driver="eth" name="txd1"/>
         <signal af="12" driver="fmc" name="a25"/>
         <signal af="13" driver="lptim" instance="5" name="in1"/>
       </gpio>
@@ -1966,8 +1912,7 @@
         <signal af="7" driver="usart" instance="6" name="tx"/>
         <signal af="9" driver="octospi" instance="1" name="io7"/>
         <signal af="10" driver="sdmmc" instance="2" name="d7"/>
-        <signal device-pin="a|i|z" device-variant="" af="11" driver="eth" name="txd1"/>
-        <signal device-pin="i" device-variant="q" af="11" driver="eth" name="txd1"/>
+        <signal af="11" driver="eth" name="txd1"/>
         <signal af="12" driver="fmc" name="a25"/>
         <signal af="13" driver="lptim" instance="5" name="in1"/>
       </gpio>
