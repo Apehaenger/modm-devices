@@ -580,6 +580,9 @@ stm32_memory = \
                 'name': ['03'],
                 'memories': {'flash': 0, 'sram1': 0, 'sram2': 16*1024, 'backup': 2*1024}
             },{
+                'name': ['23', '33'],
+                'memories': {'flash': 0, 'sram1': 128*1024, 'sram2': 80*1024, 'sram3': 64*1024, 'backup': 2*1024}
+            },{
                 'name': ['62', '63', '73'],
                 'memories': {'flash': 0, 'sram1': 0, 'sram2': 16*1024, 'sram3': 320*1024, 'backup': 4*1024}
             },
