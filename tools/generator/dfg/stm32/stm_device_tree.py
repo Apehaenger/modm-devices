@@ -26,7 +26,7 @@ class STMDeviceTree:
     """
     rootpath = os.path.join(os.path.dirname(__file__), "..", "..", "raw-device-data", "stm32-devices", "mcu")
     familyFile = XMLReader(os.path.join(rootpath, "families.xml"))
-    TemperatureMap = {0: "6", 105: "7", 125: "3"}
+    TemperatureMap = {0: "6", 85: "6", 105: "7", 125: "3"}
 
     @staticmethod
     def _format_raw_devices(rawDevices):
