@@ -1828,3 +1828,699 @@ index 08e92cb2..a7a39d27 100644
      <Ram>3026</Ram>
      <IONb>101</IONb>
      <Die>DIE476</Die>
+diff --git a/stm32-devices/mcu/STM32H523CCTx.xml b/stm32-devices/mcu/STM32H523CCTx.xml
+index 4a96267..6b21ada 100644
+--- a/stm32-devices/mcu/STM32H523CCTx.xml
++++ b/stm32-devices/mcu/STM32H523CCTx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>35</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523CCUx.xml b/stm32-devices/mcu/STM32H523CCUx.xml
+index 3201106..a6ed909 100644
+--- a/stm32-devices/mcu/STM32H523CCUx.xml
++++ b/stm32-devices/mcu/STM32H523CCUx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>35</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523CETx.xml b/stm32-devices/mcu/STM32H523CETx.xml
+index 94c7cea..233b975 100644
+--- a/stm32-devices/mcu/STM32H523CETx.xml
++++ b/stm32-devices/mcu/STM32H523CETx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>35</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523CEUx.xml b/stm32-devices/mcu/STM32H523CEUx.xml
+index 81c785e..46bb89a 100644
+--- a/stm32-devices/mcu/STM32H523CEUx.xml
++++ b/stm32-devices/mcu/STM32H523CEUx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>35</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523HEYx.xml b/stm32-devices/mcu/STM32H523HEYx.xml
+index 928e8e9..fe175be 100644
+--- a/stm32-devices/mcu/STM32H523HEYx.xml
++++ b/stm32-devices/mcu/STM32H523HEYx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>26</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523RCTx.xml b/stm32-devices/mcu/STM32H523RCTx.xml
+index 3a156e8..736d335 100644
+--- a/stm32-devices/mcu/STM32H523RCTx.xml
++++ b/stm32-devices/mcu/STM32H523RCTx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>49</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523RETx.xml b/stm32-devices/mcu/STM32H523RETx.xml
+index 4dd3d73..8a7d88b 100644
+--- a/stm32-devices/mcu/STM32H523RETx.xml
++++ b/stm32-devices/mcu/STM32H523RETx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>49</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523VCIx.xml b/stm32-devices/mcu/STM32H523VCIx.xml
+index 71abda9..fd1c9f3 100644
+--- a/stm32-devices/mcu/STM32H523VCIx.xml
++++ b/stm32-devices/mcu/STM32H523VCIx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>80</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523VCTx.xml b/stm32-devices/mcu/STM32H523VCTx.xml
+index d60a37d..9895b56 100644
+--- a/stm32-devices/mcu/STM32H523VCTx.xml
++++ b/stm32-devices/mcu/STM32H523VCTx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>80</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523VEIx.xml b/stm32-devices/mcu/STM32H523VEIx.xml
+index d026981..560e2c7 100644
+--- a/stm32-devices/mcu/STM32H523VEIx.xml
++++ b/stm32-devices/mcu/STM32H523VEIx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>80</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523VETx.xml b/stm32-devices/mcu/STM32H523VETx.xml
+index 3d5bbf0..cff569f 100644
+--- a/stm32-devices/mcu/STM32H523VETx.xml
++++ b/stm32-devices/mcu/STM32H523VETx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>80</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523ZCJx.xml b/stm32-devices/mcu/STM32H523ZCJx.xml
+index 82f271f..d8d93b4 100644
+--- a/stm32-devices/mcu/STM32H523ZCJx.xml
++++ b/stm32-devices/mcu/STM32H523ZCJx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>112</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523ZCTx.xml b/stm32-devices/mcu/STM32H523ZCTx.xml
+index b6d7daa..175b6cc 100644
+--- a/stm32-devices/mcu/STM32H523ZCTx.xml
++++ b/stm32-devices/mcu/STM32H523ZCTx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>112</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523ZEJx.xml b/stm32-devices/mcu/STM32H523ZEJx.xml
+index 7a289b0..d213d1f 100644
+--- a/stm32-devices/mcu/STM32H523ZEJx.xml
++++ b/stm32-devices/mcu/STM32H523ZEJx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>112</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H523ZETx.xml b/stm32-devices/mcu/STM32H523ZETx.xml
+index 34ea877..56bc451 100644
+--- a/stm32-devices/mcu/STM32H523ZETx.xml
++++ b/stm32-devices/mcu/STM32H523ZETx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>112</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H533CETx.xml b/stm32-devices/mcu/STM32H533CETx.xml
+index 930cbb4..d48e8c1 100644
+--- a/stm32-devices/mcu/STM32H533CETx.xml
++++ b/stm32-devices/mcu/STM32H533CETx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>35</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H533CEUx.xml b/stm32-devices/mcu/STM32H533CEUx.xml
+index dd64ab1..e4e3a64 100644
+--- a/stm32-devices/mcu/STM32H533CEUx.xml
++++ b/stm32-devices/mcu/STM32H533CEUx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>35</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H533HEYx.xml b/stm32-devices/mcu/STM32H533HEYx.xml
+index d3d8d52..8e8d2fb 100644
+--- a/stm32-devices/mcu/STM32H533HEYx.xml
++++ b/stm32-devices/mcu/STM32H533HEYx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>26</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H533RETx.xml b/stm32-devices/mcu/STM32H533RETx.xml
+index 80fa8f3..3b254e3 100644
+--- a/stm32-devices/mcu/STM32H533RETx.xml
++++ b/stm32-devices/mcu/STM32H533RETx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>49</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H533VEIx.xml b/stm32-devices/mcu/STM32H533VEIx.xml
+index 7053537..6aa709a 100644
+--- a/stm32-devices/mcu/STM32H533VEIx.xml
++++ b/stm32-devices/mcu/STM32H533VEIx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>80</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H533VETx.xml b/stm32-devices/mcu/STM32H533VETx.xml
+index aa06c9f..46c5d70 100644
+--- a/stm32-devices/mcu/STM32H533VETx.xml
++++ b/stm32-devices/mcu/STM32H533VETx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>80</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H533ZEJx.xml b/stm32-devices/mcu/STM32H533ZEJx.xml
+index 4ed8628..fdaafef 100644
+--- a/stm32-devices/mcu/STM32H533ZEJx.xml
++++ b/stm32-devices/mcu/STM32H533ZEJx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>112</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H533ZETx.xml b/stm32-devices/mcu/STM32H533ZETx.xml
+index d7f322e..64abe38 100644
+--- a/stm32-devices/mcu/STM32H533ZETx.xml
++++ b/stm32-devices/mcu/STM32H533ZETx.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <BootPath>Available</BootPath>
++    <Frequency>250</Frequency>
+     <Ram>272</Ram>
+     <IONb>112</IONb>
+     <Die>DIE478</Die>
+diff --git a/stm32-devices/mcu/STM32H7R3A8Ix.xml b/stm32-devices/mcu/STM32H7R3A8Ix.xml
+index 517820b..e73437b 100644
+--- a/stm32-devices/mcu/STM32H7R3A8Ix.xml
++++ b/stm32-devices/mcu/STM32H7R3A8Ix.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>116</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R3I8Kx.xml b/stm32-devices/mcu/STM32H7R3I8Kx.xml
+index 2bb1a17..18d152f 100644
+--- a/stm32-devices/mcu/STM32H7R3I8Kx.xml
++++ b/stm32-devices/mcu/STM32H7R3I8Kx.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>122</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R3I8Tx.xml b/stm32-devices/mcu/STM32H7R3I8Tx.xml
+index 6feb684..0f2d32b 100644
+--- a/stm32-devices/mcu/STM32H7R3I8Tx.xml
++++ b/stm32-devices/mcu/STM32H7R3I8Tx.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>119</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R3L8Hx.xml b/stm32-devices/mcu/STM32H7R3L8Hx.xml
+index d75a32e..3de410e 100644
+--- a/stm32-devices/mcu/STM32H7R3L8Hx.xml
++++ b/stm32-devices/mcu/STM32H7R3L8Hx.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>152</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R3L8HxH.xml b/stm32-devices/mcu/STM32H7R3L8HxH.xml
+index 5de5dfd..7cef0a0 100644
+--- a/stm32-devices/mcu/STM32H7R3L8HxH.xml
++++ b/stm32-devices/mcu/STM32H7R3L8HxH.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>150</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R3R8Vx.xml b/stm32-devices/mcu/STM32H7R3R8Vx.xml
+index 5d5505f..6421a90 100644
+--- a/stm32-devices/mcu/STM32H7R3R8Vx.xml
++++ b/stm32-devices/mcu/STM32H7R3R8Vx.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>45</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R3V8Hx.xml b/stm32-devices/mcu/STM32H7R3V8Hx.xml
+index 5ea45a7..4a0de35 100644
+--- a/stm32-devices/mcu/STM32H7R3V8Hx.xml
++++ b/stm32-devices/mcu/STM32H7R3V8Hx.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>63</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R3V8Tx.xml b/stm32-devices/mcu/STM32H7R3V8Tx.xml
+index fa276a8..1db0f4d 100644
+--- a/stm32-devices/mcu/STM32H7R3V8Tx.xml
++++ b/stm32-devices/mcu/STM32H7R3V8Tx.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>67</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R3V8Yx.xml b/stm32-devices/mcu/STM32H7R3V8Yx.xml
+index f58b338..5bcfbc6 100644
+--- a/stm32-devices/mcu/STM32H7R3V8Yx.xml
++++ b/stm32-devices/mcu/STM32H7R3V8Yx.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>65</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R3Z8Jx.xml b/stm32-devices/mcu/STM32H7R3Z8Jx.xml
+index 3a37e88..ebe307a 100644
+--- a/stm32-devices/mcu/STM32H7R3Z8Jx.xml
++++ b/stm32-devices/mcu/STM32H7R3Z8Jx.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>94</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R3Z8Tx.xml b/stm32-devices/mcu/STM32H7R3Z8Tx.xml
+index 668c8f7..59e3b44 100644
+--- a/stm32-devices/mcu/STM32H7R3Z8Tx.xml
++++ b/stm32-devices/mcu/STM32H7R3Z8Tx.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>98</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R7A8Ix.xml b/stm32-devices/mcu/STM32H7R7A8Ix.xml
+index f1a9754..b234dc6 100644
+--- a/stm32-devices/mcu/STM32H7R7A8Ix.xml
++++ b/stm32-devices/mcu/STM32H7R7A8Ix.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>117</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R7I8Kx.xml b/stm32-devices/mcu/STM32H7R7I8Kx.xml
+index e4c3c0b..17c1947 100644
+--- a/stm32-devices/mcu/STM32H7R7I8Kx.xml
++++ b/stm32-devices/mcu/STM32H7R7I8Kx.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>122</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R7I8Tx.xml b/stm32-devices/mcu/STM32H7R7I8Tx.xml
+index 70ebdc2..cc2e064 100644
+--- a/stm32-devices/mcu/STM32H7R7I8Tx.xml
++++ b/stm32-devices/mcu/STM32H7R7I8Tx.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>118</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R7L8Hx.xml b/stm32-devices/mcu/STM32H7R7L8Hx.xml
+index 2934b0e..65de4ea 100644
+--- a/stm32-devices/mcu/STM32H7R7L8Hx.xml
++++ b/stm32-devices/mcu/STM32H7R7L8Hx.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>152</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R7L8HxH.xml b/stm32-devices/mcu/STM32H7R7L8HxH.xml
+index 9644bea..89d80a2 100644
+--- a/stm32-devices/mcu/STM32H7R7L8HxH.xml
++++ b/stm32-devices/mcu/STM32H7R7L8HxH.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>150</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7R7Z8Jx.xml b/stm32-devices/mcu/STM32H7R7Z8Jx.xml
+index 14b909c..5740815 100644
+--- a/stm32-devices/mcu/STM32H7R7Z8Jx.xml
++++ b/stm32-devices/mcu/STM32H7R7Z8Jx.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>93</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S3A8Ix.xml b/stm32-devices/mcu/STM32H7S3A8Ix.xml
+index e74e9d1..fa38d2b 100644
+--- a/stm32-devices/mcu/STM32H7S3A8Ix.xml
++++ b/stm32-devices/mcu/STM32H7S3A8Ix.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>116</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S3I8Kx.xml b/stm32-devices/mcu/STM32H7S3I8Kx.xml
+index edefaa9..a15bfc2 100644
+--- a/stm32-devices/mcu/STM32H7S3I8Kx.xml
++++ b/stm32-devices/mcu/STM32H7S3I8Kx.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>122</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S3I8Tx.xml b/stm32-devices/mcu/STM32H7S3I8Tx.xml
+index 43e1635..f7f0fd7 100644
+--- a/stm32-devices/mcu/STM32H7S3I8Tx.xml
++++ b/stm32-devices/mcu/STM32H7S3I8Tx.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>119</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S3L8Hx.xml b/stm32-devices/mcu/STM32H7S3L8Hx.xml
+index 7c88d84..15c0daf 100644
+--- a/stm32-devices/mcu/STM32H7S3L8Hx.xml
++++ b/stm32-devices/mcu/STM32H7S3L8Hx.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>152</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S3L8HxH.xml b/stm32-devices/mcu/STM32H7S3L8HxH.xml
+index 73aa3fd..b186169 100644
+--- a/stm32-devices/mcu/STM32H7S3L8HxH.xml
++++ b/stm32-devices/mcu/STM32H7S3L8HxH.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>150</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S3R8Vx.xml b/stm32-devices/mcu/STM32H7S3R8Vx.xml
+index bb277a1..1add7cf 100644
+--- a/stm32-devices/mcu/STM32H7S3R8Vx.xml
++++ b/stm32-devices/mcu/STM32H7S3R8Vx.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>45</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S3V8Hx.xml b/stm32-devices/mcu/STM32H7S3V8Hx.xml
+index 64933b7..9dd6f25 100644
+--- a/stm32-devices/mcu/STM32H7S3V8Hx.xml
++++ b/stm32-devices/mcu/STM32H7S3V8Hx.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>63</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S3V8Tx.xml b/stm32-devices/mcu/STM32H7S3V8Tx.xml
+index d513eb2..dcd0bf2 100644
+--- a/stm32-devices/mcu/STM32H7S3V8Tx.xml
++++ b/stm32-devices/mcu/STM32H7S3V8Tx.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>67</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S3V8Yx.xml b/stm32-devices/mcu/STM32H7S3V8Yx.xml
+index 71aeb3f..0d20065 100644
+--- a/stm32-devices/mcu/STM32H7S3V8Yx.xml
++++ b/stm32-devices/mcu/STM32H7S3V8Yx.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>65</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S3Z8Jx.xml b/stm32-devices/mcu/STM32H7S3Z8Jx.xml
+index cbc4343..684e6d6 100644
+--- a/stm32-devices/mcu/STM32H7S3Z8Jx.xml
++++ b/stm32-devices/mcu/STM32H7S3Z8Jx.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>94</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S3Z8Tx.xml b/stm32-devices/mcu/STM32H7S3Z8Tx.xml
+index a02fd5a..748f815 100644
+--- a/stm32-devices/mcu/STM32H7S3Z8Tx.xml
++++ b/stm32-devices/mcu/STM32H7S3Z8Tx.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>98</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S7A8Ix.xml b/stm32-devices/mcu/STM32H7S7A8Ix.xml
+index eb20479..8b64d6a 100644
+--- a/stm32-devices/mcu/STM32H7S7A8Ix.xml
++++ b/stm32-devices/mcu/STM32H7S7A8Ix.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>117</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S7I8Kx.xml b/stm32-devices/mcu/STM32H7S7I8Kx.xml
+index d858de3..09efd7b 100644
+--- a/stm32-devices/mcu/STM32H7S7I8Kx.xml
++++ b/stm32-devices/mcu/STM32H7S7I8Kx.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>122</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S7I8Tx.xml b/stm32-devices/mcu/STM32H7S7I8Tx.xml
+index d403557..9b918e7 100644
+--- a/stm32-devices/mcu/STM32H7S7I8Tx.xml
++++ b/stm32-devices/mcu/STM32H7S7I8Tx.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>118</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S7L8Hx.xml b/stm32-devices/mcu/STM32H7S7L8Hx.xml
+index 8325b9e..2519d5c 100644
+--- a/stm32-devices/mcu/STM32H7S7L8Hx.xml
++++ b/stm32-devices/mcu/STM32H7S7L8Hx.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>152</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S7L8HxH.xml b/stm32-devices/mcu/STM32H7S7L8HxH.xml
+index 15006d3..9d5df70 100644
+--- a/stm32-devices/mcu/STM32H7S7L8HxH.xml
++++ b/stm32-devices/mcu/STM32H7S7L8HxH.xml
+@@ -6,6 +6,7 @@
+     <Context Comment="Enable the External Memory Loader code context only for the peripheral(s) you want to use in Eloader" Core="ARM Cortex-M7" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>150</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32H7S7Z8Jx.xml b/stm32-devices/mcu/STM32H7S7Z8Jx.xml
+index 78bce89..035c59f 100644
+--- a/stm32-devices/mcu/STM32H7S7Z8Jx.xml
++++ b/stm32-devices/mcu/STM32H7S7Z8Jx.xml
+@@ -7,6 +7,7 @@
+     <Frequency>550</Frequency>
+     <MemoryMap>Available</MemoryMap>
+     <BootPath>Available</BootPath>
++    <Frequency>600</Frequency>
+     <Ram>620</Ram>
+     <IONb>93</IONb>
+     <Die>DIE485</Die>
+diff --git a/stm32-devices/mcu/STM32U5A5QIIxQ.xml b/stm32-devices/mcu/STM32U5A5QIIxQ.xml
+index 8d0fb46..25988c7 100644
+--- a/stm32-devices/mcu/STM32U5A5QIIxQ.xml
++++ b/stm32-devices/mcu/STM32U5A5QIIxQ.xml
+@@ -9,6 +9,7 @@
+     <MemoryMap>Available</MemoryMap>
+     <TrustZone>Available</TrustZone>
+     <LPBAM>Available</LPBAM>
++    <Frequency>160</Frequency>
+     <Ram>2514</Ram>
+     <IONb>106</IONb>
+     <Die>DIE481</Die>
