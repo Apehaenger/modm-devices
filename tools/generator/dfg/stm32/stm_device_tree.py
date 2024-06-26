@@ -77,7 +77,7 @@ class STMDeviceTree:
     def _properties_from_id(comboDeviceName, device_file, did, core):
         if core.endswith("m4") or core.endswith("m7") or core.endswith("m33"):
             core += "f"
-        if did.family in ["h7"] or (did.family in ["f7"] and did.name not in ["45", "46", "56"]):
+        if did.family in ["h7"] or (did.family in ["f7"] and (did.name[0] in ("6", "7"))):
             core += "d"
         if "@" in did.naming_schema:
             did.set("core", core[7:9])

@@ -54,7 +54,7 @@
     <valid-device>stm32f733zei7</valid-device>
     <valid-device>stm32f733zet6</valid-device>
     <valid-device>stm32f733zet7</valid-device>
-    <driver name="core" type="cortex-m7fd">
+    <driver name="core" type="cortex-m7f">
       <memory name="itcm" access="rwx" start="0x00" size="16384"/>
       <memory device-size="c" name="flash" access="rx" start="0x200000" size="262144"/>
       <memory device-size="e" name="flash" access="rx" start="0x200000" size="524288"/>
