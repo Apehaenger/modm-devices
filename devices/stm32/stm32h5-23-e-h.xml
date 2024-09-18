@@ -181,12 +181,10 @@
     <driver name="i2c" type="stm32-v1.1">
       <instance value="1"/>
       <instance value="2"/>
-      <instance value="3"/>
     </driver>
     <driver name="i2s" type="stm32-v2.1">
       <instance value="1"/>
       <instance value="2"/>
-      <instance value="3"/>
     </driver>
     <driver name="i3c" type="stm32-v1.0">
       <instance value="1"/>
@@ -218,7 +216,6 @@
       <instance value="1"/>
       <instance value="2"/>
       <instance value="3"/>
-      <instance value="4"/>
     </driver>
     <driver name="sys" type="stm32">
       <feature value="exti"/>
@@ -248,8 +245,6 @@
     <driver name="usart" type="stm32">
       <instance value="1"/>
       <instance value="2"/>
-      <instance value="3"/>
-      <instance value="6"/>
     </driver>
     <driver name="usb" type="stm32-v1.0"/>
     <driver name="usbpd" type="stm32-v4.1"/>
@@ -268,7 +263,6 @@
         <signal af="2" driver="tim" instance="5" name="ch1"/>
         <signal af="3" driver="tim" instance="8" name="etr"/>
         <signal af="4" driver="tim" instance="15" name="bkin"/>
-        <signal af="5" driver="spi" instance="4" name="sck"/>
         <signal af="6" driver="spi" instance="3" name="rdy"/>
         <signal af="7" driver="usart" instance="2" name="cts"/>
         <signal af="7" driver="usart" instance="2" name="nss"/>
@@ -286,10 +280,10 @@
         <signal af="4" driver="tim" instance="15" name="ch1n"/>
         <signal af="5" driver="lptim" instance="1" name="in1"/>
         <signal af="6" driver="octospi" instance="1" name="dqs"/>
+        <signal af="7" driver="usart" instance="2" name="de"/>
         <signal af="7" driver="usart" instance="2" name="rts"/>
         <signal af="8" driver="uart" instance="4" name="rx"/>
         <signal af="9" driver="octospi" instance="1" name="io3"/>
-        <signal af="14" driver="usart" instance="6" name="ck"/>
       </gpio>
       <gpio port="a" pin="2">
         <signal driver="adc" instance="1" name="inp14"/>
@@ -313,7 +307,6 @@
         <signal af="4" driver="tim" instance="15" name="ch2"/>
         <signal af="5" driver="i2s" instance="2" name="ws"/>
         <signal af="5" driver="spi" instance="2" name="nss"/>
-        <signal af="6" driver="i2s" instance="3" name="sdo"/>
         <signal af="6" driver="spi" instance="3" name="mosi"/>
         <signal af="7" driver="usart" instance="2" name="rx"/>
       </gpio>
@@ -323,11 +316,9 @@
         <signal driver="dac" instance="1" name="out1"/>
         <signal af="2" driver="tim" instance="5" name="etr"/>
         <signal af="3" driver="lptim" instance="2" name="ch1"/>
-        <signal af="4" driver="i2s" instance="3" name="sdo"/>
         <signal af="4" driver="spi" instance="3" name="mosi"/>
         <signal af="5" driver="i2s" instance="1" name="ws"/>
         <signal af="5" driver="spi" instance="1" name="nss"/>
-        <signal af="6" driver="i2s" instance="3" name="ws"/>
         <signal af="6" driver="spi" instance="3" name="nss"/>
         <signal af="7" driver="usart" instance="2" name="ck"/>
       </gpio>
@@ -369,9 +360,7 @@
         <signal af="0" driver="rcc" name="mco_1"/>
         <signal af="1" driver="tim" instance="1" name="ch1"/>
         <signal af="3" driver="tim" instance="8" name="bkin2"/>
-        <signal af="4" driver="i2c" instance="3" name="scl"/>
         <signal af="5" driver="spi" instance="1" name="rdy"/>
-        <signal af="6" driver="spi" instance="4" name="mosi"/>
         <signal af="7" driver="usart" instance="1" name="ck"/>
         <signal af="9" driver="i3c" instance="2" name="scl"/>
         <signal af="10" driver="usb" name="sof"/>
@@ -389,10 +378,12 @@
       </gpio>
       <gpio port="a" pin="12">
         <signal af="1" driver="tim" instance="1" name="etr"/>
+        <signal af="3" driver="lpuart" instance="1" name="de"/>
         <signal af="3" driver="lpuart" instance="1" name="rts"/>
         <signal af="5" driver="i2s" instance="2" name="ck"/>
         <signal af="5" driver="spi" instance="2" name="sck"/>
         <signal af="6" driver="uart" instance="4" name="tx"/>
+        <signal af="7" driver="usart" instance="1" name="de"/>
         <signal af="7" driver="usart" instance="1" name="rts"/>
         <signal af="9" driver="fdcan" instance="1" name="tx"/>
         <signal af="10" driver="usb" name="dp"/>
@@ -411,7 +402,6 @@
         <signal af="4" driver="hdmi_cec" name="cec"/>
         <signal af="5" driver="i2s" instance="1" name="ws"/>
         <signal af="5" driver="spi" instance="1" name="nss"/>
-        <signal af="6" driver="i2s" instance="3" name="ws"/>
         <signal af="6" driver="spi" instance="3" name="nss"/>
         <signal af="7" driver="usart" instance="1" name="tx"/>
         <signal af="8" driver="uart" instance="4" name="de"/>
@@ -427,7 +417,6 @@
         <signal af="1" driver="tim" instance="1" name="ch2n"/>
         <signal af="2" driver="tim" instance="3" name="ch3"/>
         <signal af="3" driver="tim" instance="8" name="ch2n"/>
-        <signal af="5" driver="i2s" instance="3" name="sdi"/>
         <signal af="5" driver="spi" instance="3" name="miso"/>
         <signal af="6" driver="octospi" instance="1" name="io1"/>
         <signal af="7" driver="usart" instance="2" name="tx"/>
@@ -443,7 +432,6 @@
         <signal af="5" driver="i2s" instance="2" name="ws"/>
         <signal af="5" driver="spi" instance="2" name="nss"/>
         <signal af="6" driver="octospi" instance="1" name="io0"/>
-        <signal af="7" driver="usart" instance="3" name="rx"/>
       </gpio>
       <gpio port="b" pin="3">
         <signal af="0" driver="debug" name="jtdo"/>
@@ -453,7 +441,6 @@
         <signal af="4" driver="i2c" instance="2" name="sda"/>
         <signal af="5" driver="i2s" instance="1" name="ck"/>
         <signal af="5" driver="spi" instance="1" name="sck"/>
-        <signal af="6" driver="i2s" instance="3" name="ck"/>
         <signal af="6" driver="spi" instance="3" name="sck"/>
         <signal af="8" driver="lpuart" instance="1" name="tx"/>
         <signal af="9" driver="fdcan" instance="2" name="tx"/>
@@ -467,11 +454,9 @@
         <signal af="4" driver="lptim" instance="1" name="ch2"/>
         <signal af="5" driver="i2s" instance="1" name="sdi"/>
         <signal af="5" driver="spi" instance="1" name="miso"/>
-        <signal af="6" driver="i2s" instance="3" name="sdi"/>
         <signal af="6" driver="spi" instance="3" name="miso"/>
         <signal af="7" driver="i2s" instance="2" name="ws"/>
         <signal af="7" driver="spi" instance="2" name="nss"/>
-        <signal af="9" driver="i2c" instance="3" name="sda"/>
         <signal af="10" driver="i3c" instance="2" name="sda"/>
       </gpio>
       <gpio port="b" pin="7">
@@ -479,9 +464,6 @@
         <signal af="2" driver="tim" instance="4" name="ch2"/>
         <signal af="3" driver="i3c" instance="1" name="sda"/>
         <signal af="4" driver="i2c" instance="1" name="sda"/>
-        <signal af="5" driver="spi" instance="4" name="miso"/>
-        <signal af="6" driver="usart" instance="6" name="cts"/>
-        <signal af="6" driver="usart" instance="6" name="nss"/>
         <signal af="7" driver="usart" instance="1" name="rx"/>
         <signal af="8" driver="lpuart" instance="1" name="rx"/>
         <signal af="9" driver="fdcan" instance="1" name="tx"/>
@@ -490,8 +472,6 @@
         <signal af="2" driver="tim" instance="4" name="ch3"/>
         <signal af="3" driver="i3c" instance="1" name="scl"/>
         <signal af="4" driver="i2c" instance="1" name="scl"/>
-        <signal af="5" driver="spi" instance="4" name="rdy"/>
-        <signal af="6" driver="i2s" instance="3" name="ws"/>
         <signal af="6" driver="spi" instance="3" name="nss"/>
         <signal af="8" driver="uart" instance="4" name="rx"/>
         <signal af="9" driver="fdcan" instance="1" name="rx"/>

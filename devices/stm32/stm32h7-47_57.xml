@@ -2453,7 +2453,7 @@
         <pin position="171" name="PE1"/>
         <pin position="172" name="VCAP" type="power"/>
         <pin position="173" name="VSS" type="power"/>
-        <pin position="174" name="PDR_ON" type="reset"/>
+        <pin position="174" name="PDR_ON" type="power"/>
         <pin position="175" name="VDDLDO" type="power"/>
         <pin position="176" name="VDD" type="power"/>
       </package>
@@ -2658,7 +2658,7 @@
         <pin position="198" name="PE1"/>
         <pin position="199" name="VCAP" type="power"/>
         <pin position="200" name="VSS" type="power"/>
-        <pin position="201" name="PDR_ON" type="reset"/>
+        <pin position="201" name="PDR_ON" type="power"/>
         <pin position="202" name="VDDLDO" type="power"/>
         <pin position="203" name="PI4"/>
         <pin position="204" name="PI5"/>
@@ -2742,7 +2742,7 @@
         <pin position="E4" name="PI8"/>
         <pin position="E5" name="PE6"/>
         <pin position="E6" name="VDD" type="power"/>
-        <pin position="E7" name="PDR_ON" type="reset"/>
+        <pin position="E7" name="PDR_ON" type="power"/>
         <pin position="E8" name="BOOT0" type="boot"/>
         <pin position="E9" name="VDD" type="power"/>
         <pin position="E10" name="PJ13"/>
@@ -2950,7 +2950,7 @@
         <pin position="A13" name="PA10"/>
         <pin position="B1" name="VBAT" type="power"/>
         <pin position="B2" name="VDD" type="power"/>
-        <pin position="B3" name="PDR_ON" type="reset"/>
+        <pin position="B3" name="PDR_ON" type="power"/>
         <pin position="B4" name="VSS" type="power"/>
         <pin position="B5" name="BOOT0" type="boot"/>
         <pin position="B6" name="PB4 (NJTRST)"/>
@@ -3164,7 +3164,7 @@
         <pin position="E4" name="PC7"/>
         <pin position="E5" name="PA14 (JTCK/SWCLK)"/>
         <pin position="E6" name="PD2"/>
-        <pin position="E7" name="PDR_ON" type="reset"/>
+        <pin position="E7" name="PDR_ON" type="power"/>
         <pin position="E8" name="PE6"/>
         <pin position="E9" name="PC13"/>
         <pin position="E10" name="PF0"/>

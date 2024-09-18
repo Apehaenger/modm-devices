@@ -2479,7 +2479,7 @@
         <pin position="140" name="PB9"/>
         <pin position="141" name="PE0"/>
         <pin position="142" name="PE1"/>
-        <pin position="143" name="PDR_ON" type="reset"/>
+        <pin position="143" name="PDR_ON" type="power"/>
         <pin position="144" name="VDD" type="power"/>
       </package>
       <package device-pin="i" device-package="t" name="LQFP176">
@@ -2653,7 +2653,7 @@
         <pin position="168" name="PB9"/>
         <pin position="169" name="PE0"/>
         <pin position="170" name="PE1"/>
-        <pin position="171" name="PDR_ON" type="reset"/>
+        <pin position="171" name="PDR_ON" type="power"/>
         <pin position="172" name="VDD" type="power"/>
         <pin position="173" name="PI4"/>
         <pin position="174" name="PI5"/>
@@ -2735,7 +2735,7 @@
         <pin position="E4" name="PI8"/>
         <pin position="E5" name="PE6"/>
         <pin position="E6" name="VDD" type="power"/>
-        <pin position="E7" name="PDR_ON" type="reset"/>
+        <pin position="E7" name="PDR_ON" type="power"/>
         <pin position="E8" name="BOOT0" type="boot"/>
         <pin position="E9" name="VDD" type="power"/>
         <pin position="E10" name="PJ13"/>

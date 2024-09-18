@@ -303,6 +303,7 @@
         <signal af="4" driver="tim" instance="15" name="ch1n"/>
         <signal af="5" driver="lptim" instance="1" name="in1"/>
         <signal af="6" driver="octospi" instance="1" name="dqs"/>
+        <signal af="7" driver="usart" instance="2" name="de"/>
         <signal af="7" driver="usart" instance="2" name="rts"/>
         <signal af="8" driver="uart" instance="4" name="rx"/>
         <signal af="9" driver="octospi" instance="1" name="io3"/>
@@ -438,10 +439,12 @@
       </gpio>
       <gpio port="a" pin="12">
         <signal af="1" driver="tim" instance="1" name="etr"/>
+        <signal af="3" driver="lpuart" instance="1" name="de"/>
         <signal af="3" driver="lpuart" instance="1" name="rts"/>
         <signal af="5" driver="i2s" instance="2" name="ck"/>
         <signal af="5" driver="spi" instance="2" name="sck"/>
         <signal af="6" driver="uart" instance="4" name="tx"/>
+        <signal af="7" driver="usart" instance="1" name="de"/>
         <signal af="7" driver="usart" instance="1" name="rts"/>
         <signal af="9" driver="fdcan" instance="1" name="tx"/>
         <signal af="10" driver="usb" name="dp"/>
@@ -660,6 +663,7 @@
         <signal af="4" driver="usart" instance="1" name="tx"/>
         <signal af="5" driver="i2s" instance="2" name="sdi"/>
         <signal af="5" driver="spi" instance="2" name="miso"/>
+        <signal af="7" driver="usart" instance="3" name="de"/>
         <signal af="7" driver="usart" instance="3" name="rts"/>
         <signal af="8" driver="uart" instance="4" name="de"/>
         <signal af="8" driver="uart" instance="4" name="rts"/>
@@ -882,6 +886,7 @@
         <signal af="13" driver="pssi" name="d5"/>
       </gpio>
       <gpio port="d" pin="4">
+        <signal af="7" driver="usart" instance="2" name="de"/>
         <signal af="7" driver="usart" instance="2" name="rts"/>
         <signal af="10" driver="octospi" instance="1" name="io4"/>
         <signal af="12" driver="fmc" name="noe"/>
@@ -950,6 +955,7 @@
         <signal af="2" driver="tim" instance="4" name="ch1"/>
         <signal af="3" driver="lptim" instance="2" name="in1"/>
         <signal af="5" driver="i3c" instance="1" name="scl"/>
+        <signal af="7" driver="usart" instance="3" name="de"/>
         <signal af="7" driver="usart" instance="3" name="rts"/>
         <signal af="8" driver="uart" instance="4" name="tx"/>
         <signal af="9" driver="octospi" instance="1" name="io1"/>

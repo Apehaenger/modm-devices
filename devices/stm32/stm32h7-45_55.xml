@@ -2711,7 +2711,7 @@
         <pin position="139" name="PE1"/>
         <pin position="140" name="VCAP" type="power"/>
         <pin position="141" name="VSS" type="power"/>
-        <pin position="142" name="PDR_ON" type="reset"/>
+        <pin position="142" name="PDR_ON" type="power"/>
         <pin position="143" name="VDDLDO" type="power"/>
         <pin position="144" name="VDD" type="power"/>
       </package>
@@ -2889,7 +2889,7 @@
         <pin position="171" name="PE1"/>
         <pin position="172" name="VCAP" type="power"/>
         <pin position="173" name="VSS" type="power"/>
-        <pin position="174" name="PDR_ON" type="reset"/>
+        <pin position="174" name="PDR_ON" type="power"/>
         <pin position="175" name="VDDLDO" type="power"/>
         <pin position="176" name="VDD" type="power"/>
       </package>
@@ -3094,7 +3094,7 @@
         <pin position="198" name="PE1"/>
         <pin position="199" name="VCAP" type="power"/>
         <pin position="200" name="VSS" type="power"/>
-        <pin position="201" name="PDR_ON" type="reset"/>
+        <pin position="201" name="PDR_ON" type="power"/>
         <pin position="202" name="VDDLDO" type="power"/>
         <pin position="203" name="PI4"/>
         <pin position="204" name="PI5"/>
@@ -3178,7 +3178,7 @@
         <pin position="E4" name="PI8"/>
         <pin position="E5" name="PE6"/>
         <pin position="E6" name="VDD" type="power"/>
-        <pin position="E7" name="PDR_ON" type="reset"/>
+        <pin position="E7" name="PDR_ON" type="power"/>
         <pin position="E8" name="BOOT0" type="boot"/>
         <pin position="E9" name="VDD" type="power"/>
         <pin position="E10" name="PJ13"/>
@@ -3419,7 +3419,7 @@
         <pin position="D1" name="PC15-OSC32_OUT (OSC32_OUT)"/>
         <pin position="D2" name="PC14-OSC32_IN (OSC32_IN)"/>
         <pin position="D3" name="PE5"/>
-        <pin position="D4" name="PDR_ON" type="reset"/>
+        <pin position="D4" name="PDR_ON" type="power"/>
         <pin position="D5" name="VDD" type="power"/>
         <pin position="D6" name="VSS" type="power"/>
         <pin position="D7" name="PG15"/>
