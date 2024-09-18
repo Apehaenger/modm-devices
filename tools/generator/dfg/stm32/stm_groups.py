@@ -378,6 +378,16 @@ stm_groups = \
         'name': ['e4', 'e5']
     },
 
+    # STM32U0 devices
+    {
+        'family': ['u0'],
+        'name': ['31']
+    },
+    {
+        'family': ['u0'],
+        'name': ['73', '83']
+    },
+
     # STM32U5 devices
     {
         'family': ['u5'],

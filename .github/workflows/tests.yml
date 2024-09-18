@@ -36,7 +36,7 @@ jobs:
           (( $(git status --porcelain | wc -l) == 0 ))
 
   group-2:
-    name: "STM32: C0, G0, H7, L4"
+    name: "STM32: C0, G0, U0, H7, L4"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -51,7 +51,7 @@ jobs:
       - name: Generate STM32 data
         run: |
           cd tools/generator
-          make generate-stm32c0 generate-stm32g0 generate-stm32h7 generate-stm32l4
+          make generate-stm32c0 generate-stm32g0 generate-stm32u0 generate-stm32h7 generate-stm32l4
       - name: Synchronize Docs
         run: |
           python3 tools/scripts/sync_docs.py

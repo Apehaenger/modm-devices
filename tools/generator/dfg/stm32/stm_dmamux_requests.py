@@ -17,7 +17,7 @@ def read_request_map(did):
     request_map = None
     if did.family in ["c0", "g4", "h7", "l5"]:
         request_map = _read_requests(dma_header, REQUEST_PATTERN)
-    elif did.family in ["g0", "wb", "wl"]:
+    elif did.family in ["g0", "u0", "wb", "wl"]:
         request_map = _read_requests_from_ll_dmamux(dma_header, dmamux_header)
     elif did.family == "l4" and did.name[0] in ["p", "q", "r", "s"]:
         request_map = _read_requests_l4(did.name in ["p5", "q5"])

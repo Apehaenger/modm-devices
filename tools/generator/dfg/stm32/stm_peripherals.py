@@ -394,7 +394,7 @@ stm_peripherals = \
                     'hardware': 'stm32-extended',
                     'features': ['dnf', 'fmp'],
                     'protocols': ['i2c-v3.0'],
-                    'devices': [{'family': ['f0', 'g0', 'l0']}]
+                    'devices': [{'family': ['f0', 'g0', 'l0', 'u0']}]
                 },{
                     # This hardware supports FM+ (1 Mhz) and SMBus
                     'hardware': 'stm32-extended',
@@ -412,7 +412,7 @@ stm_peripherals = \
                     'hardware': 'stm32-extended',
                     'features': ['dnf', 'fmp'],
                     'protocols': ['i2c-v3.0', 'smb-v2.0', 'pmb-v1.1'],
-                    'devices': [{'family': ['f0', 'g0', 'f3', 'f7', 'l0', 'l4', 'l5', 'h7', 'g4', 'u5', 'wb']}]
+                    'devices': [{'family': ['f0', 'g0', 'f3', 'f7', 'l0', 'l4', 'l5', 'h7', 'g4', 'u0', 'u5', 'wb']}]
                 }
             ]
         }
