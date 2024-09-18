@@ -44,10 +44,10 @@ make generate-sam
 make generate-avr
 ```
 
-You need Python3 with lxml, jinja2, deepdiff and CppHeaderParser packages.
+You need Python3 with lxml, jinja2, deepdiff, CppHeaderParser and packaging packages.
 
 ```sh
-pip install lxml jinja2 deepdiff CppHeaderParser
+pip install lxml jinja2 deepdiff CppHeaderParser packaging
 ```
 
 
