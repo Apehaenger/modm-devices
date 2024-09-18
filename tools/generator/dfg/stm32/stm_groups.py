@@ -184,7 +184,7 @@ stm_groups = \
     # STM32C0 devices
     {
         'family': ['c0'],
-        'name': ['11', '31']
+        'name': ['11', '31', '71']
     },
 
     # STM32G0 devices

@@ -3488,3 +3488,363 @@ index 4f920f1..43e003a 100644
      <MemoryMap>Available</MemoryMap>
      <Ram>64</Ram>
      <IONb>20</IONb>
+diff --git a/stm32-devices/mcu/STM32C071C8Tx.xml b/stm32-devices/mcu/STM32C071C8Tx.xml
+index 3b30ba2..6a629b7 100644
+--- a/stm32-devices/mcu/STM32C071C8Tx.xml
++++ b/stm32-devices/mcu/STM32C071C8Tx.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="LQFP48_GP" RefName="STM32C071C8Tx" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>45</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071C8TxN.xml b/stm32-devices/mcu/STM32C071C8TxN.xml
+index 740b5c4..ac0c93a 100644
+--- a/stm32-devices/mcu/STM32C071C8TxN.xml
++++ b/stm32-devices/mcu/STM32C071C8TxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="LQFP48_N" RefName="STM32C071C8TxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>43</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071C8Ux.xml b/stm32-devices/mcu/STM32C071C8Ux.xml
+index 03b26ba..84fa4d2 100644
+--- a/stm32-devices/mcu/STM32C071C8Ux.xml
++++ b/stm32-devices/mcu/STM32C071C8Ux.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="UFQFPN48_GP" RefName="STM32C071C8Ux" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>45</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071C8UxN.xml b/stm32-devices/mcu/STM32C071C8UxN.xml
+index 01b2892..c1dfba0 100644
+--- a/stm32-devices/mcu/STM32C071C8UxN.xml
++++ b/stm32-devices/mcu/STM32C071C8UxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="UFQFPN48_N" RefName="STM32C071C8UxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>43</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071CBTx.xml b/stm32-devices/mcu/STM32C071CBTx.xml
+index 3b350d3..1efe3e9 100644
+--- a/stm32-devices/mcu/STM32C071CBTx.xml
++++ b/stm32-devices/mcu/STM32C071CBTx.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="LQFP48_GP" RefName="STM32C071CBTx" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>45</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071CBTxN.xml b/stm32-devices/mcu/STM32C071CBTxN.xml
+index e2026d2..211027a 100644
+--- a/stm32-devices/mcu/STM32C071CBTxN.xml
++++ b/stm32-devices/mcu/STM32C071CBTxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="LQFP48_N" RefName="STM32C071CBTxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>43</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071CBUx.xml b/stm32-devices/mcu/STM32C071CBUx.xml
+index 006ebca..e357ec5 100644
+--- a/stm32-devices/mcu/STM32C071CBUx.xml
++++ b/stm32-devices/mcu/STM32C071CBUx.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="UFQFPN48_GP" RefName="STM32C071CBUx" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>45</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071CBUxN.xml b/stm32-devices/mcu/STM32C071CBUxN.xml
+index 02499ae..98260a1 100644
+--- a/stm32-devices/mcu/STM32C071CBUxN.xml
++++ b/stm32-devices/mcu/STM32C071CBUxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="UFQFPN48_N" RefName="STM32C071CBUxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>43</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071F8Px.xml b/stm32-devices/mcu/STM32C071F8Px.xml
+index 576adcb..6176c11 100644
+--- a/stm32-devices/mcu/STM32C071F8Px.xml
++++ b/stm32-devices/mcu/STM32C071F8Px.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="TSSOP20_GP" RefName="STM32C071F8Px" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>18</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071F8PxN.xml b/stm32-devices/mcu/STM32C071F8PxN.xml
+index 8a34949..5600445 100644
+--- a/stm32-devices/mcu/STM32C071F8PxN.xml
++++ b/stm32-devices/mcu/STM32C071F8PxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="TSSOP20_N" RefName="STM32C071F8PxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>17</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071FBPx.xml b/stm32-devices/mcu/STM32C071FBPx.xml
+index 8974605..bc5790c 100644
+--- a/stm32-devices/mcu/STM32C071FBPx.xml
++++ b/stm32-devices/mcu/STM32C071FBPx.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="TSSOP20_GP" RefName="STM32C071FBPx" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>18</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071FBPxN.xml b/stm32-devices/mcu/STM32C071FBPxN.xml
+index 7b71b79..9e1054c 100644
+--- a/stm32-devices/mcu/STM32C071FBPxN.xml
++++ b/stm32-devices/mcu/STM32C071FBPxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="TSSOP20_N" RefName="STM32C071FBPxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>17</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071FBYx.xml b/stm32-devices/mcu/STM32C071FBYx.xml
+index 58d7570..4d43db5 100644
+--- a/stm32-devices/mcu/STM32C071FBYx.xml
++++ b/stm32-devices/mcu/STM32C071FBYx.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="WLCSP19_GP" RefName="STM32C071FBYx" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>17</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071G8Ux.xml b/stm32-devices/mcu/STM32C071G8Ux.xml
+index cfc8a98..0f372dc 100644
+--- a/stm32-devices/mcu/STM32C071G8Ux.xml
++++ b/stm32-devices/mcu/STM32C071G8Ux.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="UFQFPN28_GP" RefName="STM32C071G8Ux" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>26</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071G8UxN.xml b/stm32-devices/mcu/STM32C071G8UxN.xml
+index 337842f..f60add1 100644
+--- a/stm32-devices/mcu/STM32C071G8UxN.xml
++++ b/stm32-devices/mcu/STM32C071G8UxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="UFQFPN28_N" RefName="STM32C071G8UxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>25</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071GBUx.xml b/stm32-devices/mcu/STM32C071GBUx.xml
+index bb07e13..e959455 100644
+--- a/stm32-devices/mcu/STM32C071GBUx.xml
++++ b/stm32-devices/mcu/STM32C071GBUx.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="UFQFPN28_GP" RefName="STM32C071GBUx" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>26</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071GBUxN.xml b/stm32-devices/mcu/STM32C071GBUxN.xml
+index 7495263..9b9d347 100644
+--- a/stm32-devices/mcu/STM32C071GBUxN.xml
++++ b/stm32-devices/mcu/STM32C071GBUxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="UFQFPN28_N" RefName="STM32C071GBUxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>25</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071K8Tx.xml b/stm32-devices/mcu/STM32C071K8Tx.xml
+index bb82e87..3ba0ebc 100644
+--- a/stm32-devices/mcu/STM32C071K8Tx.xml
++++ b/stm32-devices/mcu/STM32C071K8Tx.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="LQFP32_GP" RefName="STM32C071K8Tx" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>30</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071K8TxN.xml b/stm32-devices/mcu/STM32C071K8TxN.xml
+index 92f2758..ae33766 100644
+--- a/stm32-devices/mcu/STM32C071K8TxN.xml
++++ b/stm32-devices/mcu/STM32C071K8TxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="LQFP32_N" RefName="STM32C071K8TxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>29</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071K8Ux.xml b/stm32-devices/mcu/STM32C071K8Ux.xml
+index 7e4f4de..7ee57e7 100644
+--- a/stm32-devices/mcu/STM32C071K8Ux.xml
++++ b/stm32-devices/mcu/STM32C071K8Ux.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="UFQFPN32_GP" RefName="STM32C071K8Ux" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>30</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071K8UxN.xml b/stm32-devices/mcu/STM32C071K8UxN.xml
+index 1ddc2fb..fe0c28f 100644
+--- a/stm32-devices/mcu/STM32C071K8UxN.xml
++++ b/stm32-devices/mcu/STM32C071K8UxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="UFQFPN32_N" RefName="STM32C071K8UxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>29</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071KBTx.xml b/stm32-devices/mcu/STM32C071KBTx.xml
+index 0249eb2..6f4f6f2 100644
+--- a/stm32-devices/mcu/STM32C071KBTx.xml
++++ b/stm32-devices/mcu/STM32C071KBTx.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="LQFP32_GP" RefName="STM32C071KBTx" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>30</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071KBTxN.xml b/stm32-devices/mcu/STM32C071KBTxN.xml
+index 37cdc5d..91dad53 100644
+--- a/stm32-devices/mcu/STM32C071KBTxN.xml
++++ b/stm32-devices/mcu/STM32C071KBTxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="LQFP32_N" RefName="STM32C071KBTxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>29</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071KBUx.xml b/stm32-devices/mcu/STM32C071KBUx.xml
+index c1d148f..1d4d4cd 100644
+--- a/stm32-devices/mcu/STM32C071KBUx.xml
++++ b/stm32-devices/mcu/STM32C071KBUx.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="UFQFPN32_GP" RefName="STM32C071KBUx" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>30</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071KBUxN.xml b/stm32-devices/mcu/STM32C071KBUxN.xml
+index 4a4aad9..90cc188 100644
+--- a/stm32-devices/mcu/STM32C071KBUxN.xml
++++ b/stm32-devices/mcu/STM32C071KBUxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="UFQFPN32_N" RefName="STM32C071KBUxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>29</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071R8Tx.xml b/stm32-devices/mcu/STM32C071R8Tx.xml
+index 26fce41..b0eda4b 100644
+--- a/stm32-devices/mcu/STM32C071R8Tx.xml
++++ b/stm32-devices/mcu/STM32C071R8Tx.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="LQFP64_GP" RefName="STM32C071R8Tx" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>61</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071R8TxN.xml b/stm32-devices/mcu/STM32C071R8TxN.xml
+index 9bcdd15..eb17369 100644
+--- a/stm32-devices/mcu/STM32C071R8TxN.xml
++++ b/stm32-devices/mcu/STM32C071R8TxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="LQFP64_N" RefName="STM32C071R8TxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>59</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071RBIxN.xml b/stm32-devices/mcu/STM32C071RBIxN.xml
+index 91e77c6..1d97ab2 100644
+--- a/stm32-devices/mcu/STM32C071RBIxN.xml
++++ b/stm32-devices/mcu/STM32C071RBIxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="UFBGA64_N" RefName="STM32C071RBIxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>59</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071RBTx.xml b/stm32-devices/mcu/STM32C071RBTx.xml
+index b09d8f7..ea96680 100644
+--- a/stm32-devices/mcu/STM32C071RBTx.xml
++++ b/stm32-devices/mcu/STM32C071RBTx.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="LQFP64_GP" RefName="STM32C071RBTx" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>61</IONb>
+     <Die>DIE493</Die>
+diff --git a/stm32-devices/mcu/STM32C071RBTxN.xml b/stm32-devices/mcu/STM32C071RBTxN.xml
+index 356eb1c..ba362f6 100644
+--- a/stm32-devices/mcu/STM32C071RBTxN.xml
++++ b/stm32-devices/mcu/STM32C071RBTxN.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <Mcu ClockTree="STM32C0_128" DBVersion="V3.0" Family="STM32C0" HasPowerPad="false" IOType="" Line="STM32C0x1" Package="LQFP64_N" RefName="STM32C071RBTxN" xmlns="http://mcd.rou.st.com/modules.php?name=mcu">
+     <Core>ARM Cortex-M0+</Core>
++    <Frequency>48</Frequency>
+     <Ram>24</Ram>
+     <IONb>59</IONb>
+     <Die>DIE493</Die>

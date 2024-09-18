@@ -10,6 +10,11 @@ stm_peripherals = \
         'instances': '*',
         'groups': [
             {
+                'hardware': 'stm32-c0',
+                'features': ['oversampler', 'calfact', 'prescaler'],
+                'protocols': ['analog-in'],
+                'devices': [{'family': ['c0']}]
+            },{
                 'hardware': 'stm32-f0',
                 'features': [],
                 'protocols': ['analog-in'],
@@ -67,7 +72,7 @@ stm_peripherals = \
                 'hardware': 'stm32',
                 'features': ['filter-14'],
                 'protocols': ['can-v2.0a', 'can-v2.0b'],
-                'devices': [{'family': ['f0', 'g0', 'f1']}]
+                'devices': [{'family': ['c0', 'f0', 'g0', 'f1']}]
             },{
                 # 28 shared filters
                 'hardware': 'stm32',
@@ -124,7 +129,7 @@ stm_peripherals = \
                 'hardware': 'stm32-mux',
                 'features': [],
                 'protocols': ['mem2mem', 'mem2per', 'per2per'],
-                'devices': [{'family': ['g0', 'g4', 'l5', 'wb', 'wl']}, {'family': ['l4'], 'name': ['p5', 'p7', 'p9', 'q5', 'q7', 'q9', 'r5', 'r7', 'r9', 's5', 's7', 's9']}]
+                'devices': [{'family': ['c0', 'g0', 'g4', 'l5', 'wb', 'wl']}, {'family': ['l4'], 'name': ['p5', 'p7', 'p9', 'q5', 'q7', 'q9', 'r5', 'r7', 'r9', 's5', 's7', 's9']}]
             },
             {
                 'hardware': 'stm32-mux-stream',
@@ -187,7 +192,7 @@ stm_peripherals = \
                 'hardware': 'stm32',
                 'features': ['data-size', 'nss-pulse', 'fifo'],
                 'protocols': [],
-                'devices': [{'family': ['f0', 'g0', 'f3', 'f7', 'l4', 'l5', 'g4', 'wb']}]
+                'devices': [{'family': ['c0', 'f0', 'g0', 'f3', 'f7', 'l4', 'l5', 'g4', 'wb']}]
             },{
                 'hardware': 'stm32-extended',
                 'features': [],
@@ -316,7 +321,7 @@ stm_peripherals = \
                 'hardware': 'stm32',
                 'features': ['exti', 'cfgr2', 'itline'],
                 'protocols': [],
-                'devices': [{'family': ['f0'], 'name': ['91', '98']}, {'family': ['g0']}]
+                'devices': [{'family': ['f0'], 'name': ['91', '98']}, {'family': ['c0', 'g0']}]
             },{
                 'hardware': 'stm32',
                 'features': ['exti', 'cfgr2'],
@@ -400,7 +405,7 @@ stm_peripherals = \
                     'hardware': 'stm32-extended',
                     'features': ['dnf', 'fmp'],
                     'protocols': ['i2c-v3.0', 'smb-v2.0', 'pmb-v1.1'],
-                    'devices': [{'family': ['f3', 'f7', 'l4', 'l5', 'h7', 'g4', 'u5', 'wb']}]
+                    'devices': [{'family': ['c0', 'f3', 'f7', 'l4', 'l5', 'h7', 'g4', 'u5', 'wb']}]
                 }
             ]
         },{
@@ -412,7 +417,7 @@ stm_peripherals = \
                     'hardware': 'stm32-extended',
                     'features': ['dnf', 'fmp'],
                     'protocols': ['i2c-v3.0', 'smb-v2.0', 'pmb-v1.1'],
-                    'devices': [{'family': ['f0', 'g0', 'f3', 'f7', 'l0', 'l4', 'l5', 'h7', 'g4', 'u0', 'u5', 'wb']}]
+                    'devices': [{'family': ['c0', 'f0', 'g0', 'f3', 'f7', 'l0', 'l4', 'l5', 'h7', 'g4', 'u0', 'u5', 'wb']}]
                 }
             ]
         }
@@ -429,7 +434,7 @@ stm_peripherals = \
                 'hardware': 'stm32-extended',
                 'features': ['tcbgt'],
                 'protocols': ['uart'],
-                'devices': [{'family': ['l4'], 'name': ['p5', 'p7', 'p9', 'q5', 'q7', 'q9', 'r5', 'r7', 'r9', 's5', 's7', 's9']}, {'family': ['g0', 'g4', 'wb', 'h7', 'l5', 'u5']}]
+                'devices': [{'family': ['l4'], 'name': ['p5', 'p7', 'p9', 'q5', 'q7', 'q9', 'r5', 'r7', 'r9', 's5', 's7', 's9']}, {'family': ['c0', 'g0', 'g4', 'wb', 'h7', 'l5', 'u5']}]
             },{
                 'hardware': 'stm32-extended',
                 'features': [],
@@ -460,7 +465,7 @@ stm_peripherals = \
                 'hardware': 'stm32-extended',
                 'features': ['tcbgt'],
                 'protocols': ['uart', 'spi'],
-                'devices': [{'family': ['l4'], 'name': ['p5', 'p7', 'p9', 'q5', 'q7', 'q9', 'r5', 'r7', 'r9', 's5', 's7', 's9']}, {'family': ['g0', 'g4', 'wb', 'h7', 'l5', 'u5']}]
+                'devices': [{'family': ['l4'], 'name': ['p5', 'p7', 'p9', 'q5', 'q7', 'q9', 'r5', 'r7', 'r9', 's5', 's7', 's9']}, {'family': ['c0', 'g0', 'g4', 'wb', 'h7', 'l5', 'u5']}]
             },{
                 'hardware': 'stm32-extended',
                 'features': [],

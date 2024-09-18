@@ -8,7 +8,6 @@ LOGGER = logging.getLogger("dfg.stm.data")
 
 ignored_devices = \
 [
-    "STM32C071",
     "STM32G414",
     "STM32WL5M",
     "STM32WB1M",
@@ -434,7 +433,7 @@ stm32_memory = \
         },
         'model': [
             {
-                'name': ['11', '31'],
+                'name': ['11', '31', '71'],
                 'memories': {'flash': 0, 'sram1': 0}
             }
         ]
