@@ -194,30 +194,6 @@
     <driver name="watchdog" type="rp20"/>
     <driver name="xip" type="rp20"/>
     <driver name="gpio" type="rp20">
-      <gpio port="qspi" pin="0" name="sclk">
-        <signal driver="xip" name="sclk" af="0"/>
-        <signal driver="sio" name="pad" af="5"/>
-      </gpio>
-      <gpio port="qspi" pin="1" name="ss">
-        <signal driver="xip" name="ss_n" af="0"/>
-        <signal driver="sio" name="pad" af="5"/>
-      </gpio>
-      <gpio port="qspi" pin="2" name="sd0">
-        <signal driver="xip" name="sd0" af="0"/>
-        <signal driver="sio" name="pad" af="5"/>
-      </gpio>
-      <gpio port="qspi" pin="3" name="sd1">
-        <signal driver="xip" name="sd1" af="0"/>
-        <signal driver="sio" name="pad" af="5"/>
-      </gpio>
-      <gpio port="qspi" pin="4" name="sd2">
-        <signal driver="xip" name="sd2" af="0"/>
-        <signal driver="sio" name="pad" af="5"/>
-      </gpio>
-      <gpio port="qspi" pin="5" name="sd3">
-        <signal driver="xip" name="sd3" af="0"/>
-        <signal driver="sio" name="pad" af="5"/>
-      </gpio>
       <gpio port="bank0" pin="0" name="0">
         <signal driver="jtag" name="tck" af="0"/>
         <signal driver="spi" name="rx" af="1" instance="0"/>
@@ -305,7 +281,6 @@
         <signal driver="usb" name="muxing_vbus_detect" af="9"/>
       </gpio>
       <gpio port="bank0" pin="8" name="8">
-        <signal driver="adc" name="in0" af="-1"/>
         <signal driver="spi" name="rx" af="1" instance="1"/>
         <signal driver="uart" name="tx" af="2" instance="1"/>
         <signal driver="i2c" name="sda" af="3" instance="0"/>
@@ -317,7 +292,6 @@
         <signal driver="usb" name="muxing_vbus_en" af="9"/>
       </gpio>
       <gpio port="bank0" pin="9" name="9">
-        <signal driver="adc" name="in1" af="-1"/>
         <signal driver="spi" name="ss_n" af="1" instance="1"/>
         <signal driver="uart" name="rx" af="2" instance="1"/>
         <signal driver="i2c" name="scl" af="3" instance="0"/>
@@ -329,7 +303,6 @@
         <signal driver="usb" name="muxing_overcurr_detect" af="9"/>
       </gpio>
       <gpio port="bank0" pin="10" name="10">
-        <signal driver="adc" name="in2" af="-1"/>
         <signal driver="spi" name="sclk" af="1" instance="1"/>
         <signal driver="uart" name="cts" af="2" instance="1"/>
         <signal driver="i2c" name="sda" af="3" instance="1"/>
@@ -341,7 +314,6 @@
         <signal driver="usb" name="muxing_vbus_detect" af="9"/>
       </gpio>
       <gpio port="bank0" pin="11" name="11">
-        <signal driver="adc" name="in3" af="-1"/>
         <signal driver="spi" name="tx" af="1" instance="1"/>
         <signal driver="uart" name="rts" af="2" instance="1"/>
         <signal driver="i2c" name="scl" af="3" instance="1"/>
@@ -504,6 +476,7 @@
         <signal driver="usb" name="muxing_vbus_detect" af="9"/>
       </gpio>
       <gpio port="bank0" pin="26" name="26">
+        <signal driver="adc" name="in0" af="-1"/>
         <signal driver="spi" name="sclk" af="1" instance="1"/>
         <signal driver="uart" name="cts" af="2" instance="1"/>
         <signal driver="i2c" name="sda" af="3" instance="1"/>
@@ -514,6 +487,7 @@
         <signal driver="usb" name="muxing_vbus_en" af="9"/>
       </gpio>
       <gpio port="bank0" pin="27" name="27">
+        <signal driver="adc" name="in1" af="-1"/>
         <signal driver="spi" name="tx" af="1" instance="1"/>
         <signal driver="uart" name="rts" af="2" instance="1"/>
         <signal driver="i2c" name="scl" af="3" instance="1"/>
@@ -524,6 +498,7 @@
         <signal driver="usb" name="muxing_overcurr_detect" af="9"/>
       </gpio>
       <gpio port="bank0" pin="28" name="28">
+        <signal driver="adc" name="in2" af="-1"/>
         <signal driver="spi" name="rx" af="1" instance="1"/>
         <signal driver="uart" name="tx" af="2" instance="0"/>
         <signal driver="i2c" name="sda" af="3" instance="0"/>
@@ -534,6 +509,7 @@
         <signal driver="usb" name="muxing_vbus_detect" af="9"/>
       </gpio>
       <gpio port="bank0" pin="29" name="29">
+        <signal driver="adc" name="in3" af="-1"/>
         <signal driver="spi" name="ss_n" af="1" instance="1"/>
         <signal driver="uart" name="rx" af="2" instance="0"/>
         <signal driver="i2c" name="scl" af="3" instance="0"/>
@@ -542,6 +518,30 @@
         <signal driver="pio" name="pad" af="6" instance="0"/>
         <signal driver="pio" name="pad" af="7" instance="1"/>
         <signal driver="usb" name="muxing_vbus_en" af="9"/>
+      </gpio>
+      <gpio port="qspi" pin="0" name="sclk">
+        <signal driver="xip" name="sclk" af="0"/>
+        <signal driver="sio" name="pad" af="5"/>
+      </gpio>
+      <gpio port="qspi" pin="1" name="ss">
+        <signal driver="xip" name="ss_n" af="0"/>
+        <signal driver="sio" name="pad" af="5"/>
+      </gpio>
+      <gpio port="qspi" pin="2" name="sd0">
+        <signal driver="xip" name="sd0" af="0"/>
+        <signal driver="sio" name="pad" af="5"/>
+      </gpio>
+      <gpio port="qspi" pin="3" name="sd1">
+        <signal driver="xip" name="sd1" af="0"/>
+        <signal driver="sio" name="pad" af="5"/>
+      </gpio>
+      <gpio port="qspi" pin="4" name="sd2">
+        <signal driver="xip" name="sd2" af="0"/>
+        <signal driver="sio" name="pad" af="5"/>
+      </gpio>
+      <gpio port="qspi" pin="5" name="sd3">
+        <signal driver="xip" name="sd3" af="0"/>
+        <signal driver="sio" name="pad" af="5"/>
       </gpio>
     </driver>
   </device>
