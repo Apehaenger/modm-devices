@@ -20,7 +20,7 @@ if __name__ == "__main__":
                 wfile.writelines(content.read().decode("utf-8"))
 
 
-print("Patching Database...", flush=True)
-shutil.copy("patches/rp2040.patch", "../raw-device-data")
-os.system("(cd ../raw-device-data; patch -p1 -l -i rp2040.patch)")
-os.remove("../raw-device-data/rp2040.patch")
+# print("Patching Database...", flush=True)
+# shutil.copy("patches/rp2040.patch", "../raw-device-data")
+# os.system("(cd ../raw-device-data; patch -p1 -l -i rp2040.patch)")
+# os.remove("../raw-device-data/rp2040.patch")

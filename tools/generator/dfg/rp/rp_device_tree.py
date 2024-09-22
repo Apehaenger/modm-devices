@@ -42,8 +42,6 @@ class RPDeviceTree:
             'name': '_'.join(parts[idx+1:eidx+1]),
             'af': func['value'],
         }
-        if res['driver'] == 'adc' and res['af'] == '31':
-          res['af'] = '-1'
         if res['name'] == '':
             res['name'] = 'pad' #default name
         if m['module'] != m['instance']:
@@ -221,10 +219,19 @@ class RPDeviceTree:
         for m in modules:
             modules_map[m['instance']]=m
 
+        # Manually path this here instead of the SVD file
+        adc_map = {
+            "bank026": {"driver": "adc", "name": "in0", "af": "-1"},
+            "bank027": {"driver": "adc", "name": "in1", "af": "-1"},
+            "bank028": {"driver": "adc", "name": "in2", "af": "-1"},
+            "bank029": {"driver": "adc", "name": "in3", "af": "-1"},
+        }
         for gpio in gpios:
             signals = []
             for func in gpio['funcs']:
                 signals.append(RPDeviceTree.func_to_signal(modules_map,func))
+            if (adcsig := adc_map.get(gpio["bank"] + gpio["name"])):
+                signals.append(adcsig)
             gpio['signals'] = signals
 
         interrupts = []
@@ -331,6 +338,7 @@ class RPDeviceTree:
         # GPIO driver
         gpio_driver = tree.addChild('driver')
         gpio_driver.setAttributes('name', 'gpio', 'type', compatible)
+        gpio_driver.addSortKey(lambda e: (e['port'], int(e['pin'])))
 
 
         # add all GPIOs

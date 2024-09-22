@@ -33,7 +33,8 @@ update-data-%:
 	@$(MAKE) $(@:update-data-%=raw-device-data/%-devices)
 
 .PHONY: update-data
-update-data: update-data-avr update-data-stm32 update-data-sam update-data-nrf
+update-data: update-data-avr update-data-stm32 update-data-sam \
+				update-data-nrf update-data-rp
 
 
 # AVR device files
